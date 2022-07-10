@@ -29,3 +29,12 @@ export const setNewlyCreatedBeer = beer => ({
   type: BeerActionTypes.BEERS_SET_NEW,
   beer
 });
+export const postBeerRating = (uuid, score) => ({
+  type: BeerActionTypes.BEERS_SET_RATING,
+  uuid, score,
+});
+
+export const setBeerRatingSuccess = (updatedItem) => ({
+  type: BeerActionTypes.BEERS_SET_RATING_SUCCESS,
+  updatedItem
+});
